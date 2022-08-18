@@ -1,4 +1,1 @@
-SELECT
-(SELECT COUNT(*) FROM SpotifyClone.musicas) AS 'cancoes',
-(SELECT COUNT(*) FROM SpotifyClone.artistas) AS 'artistas',
-(SELECT COUNT(*) FROM SpotifyClone.albuns) AS 'albuns';
+# Mudança vazia para tentar passar o teste de novo
