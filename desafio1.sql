@@ -32,7 +32,7 @@ CREATE DATABASE SpotifyClone;
     CREATE TABLE SpotifyClone.musicas(
       musica_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
       musica_nome VARCHAR(50) NOT NULL,
-      duração_musica INT NOT NULL,
+      tempo_musica INT NOT NULL,
       album_id INT NOT NULL,
       FOREIGN KEY (album_id) REFERENCES SpotifyClone.albuns(album_id)
   ) engine = InnoDB;
@@ -95,7 +95,7 @@ CREATE DATABASE SpotifyClone;
     ('Somewhere Far Beyond', 2007, 5),
     ('Put A Spell On You', 2012, 6);
 
-      INSERT INTO SpotifyClone.musicas (musica_nome, duração_musica, album_id)
+      INSERT INTO SpotifyClone.musicas (musica_nome, tempo_musica, album_id)
   VALUES
     ('BREAK MY SOUL', 279, 1),
     ('VIRGO’S GROOVE', 369, 1),
